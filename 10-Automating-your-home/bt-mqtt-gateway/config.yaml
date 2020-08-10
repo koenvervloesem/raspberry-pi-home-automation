@@ -1,0 +1,14 @@
+mqtt:
+  # mqtt config
+
+manager:
+  command_timeout: 30
+  sensor_config:
+    topic: homeassistant
+    retain: true
+  topic_subscription:
+    update_all:
+      topic: homeassistant/status
+      payload: online
+  workers:
+    # worker configuration

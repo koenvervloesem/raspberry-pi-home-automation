@@ -1,0 +1,25 @@
+version: '3.7'
+
+services:
+  # other services
+  nginx:
+    image: nginx:alpine
+    container_name: nginx
+    restart: always
+    volumes:
+      - ./containers/nginx:/etc/nginx
+      - ./containers/certificates:/etc/ssl/private:ro
+    ports:
+      - "8091:8091"
+  zwave2mqtt:
+    image: robertslando/zwave2mqtt
+    container_name: zwave2mqtt
+    restart: always
+    volumes:
+      - ./containers/zwave2mqtt:/usr/src/app/store
+    #ports:
+    #  - "8091:8091"
+    environment:
+      - TZ=Europe/Brussels
+    devices:
+      - "/dev/ttyUSB0:/dev/ttyUSB0"

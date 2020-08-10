@@ -1,0 +1,3 @@
+whatsthetime:
+  module: whatsthetime
+  class: WhatsTheTime

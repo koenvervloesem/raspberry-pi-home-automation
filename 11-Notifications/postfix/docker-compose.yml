@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+  # other services
+  postfix:
+    image: postfix
+    container_name: postfix
+    restart: always
+    environment:
+      SMTP_SERVER: SMTP_SERVER
+      SMTP_PORT: 587
+      SMTP_USERNAME: USERNAME
+      SMTP_PASSWORD: PASSWORD
+      SERVER_HOSTNAME: HOSTNAME
+    volumes:
+      - /etc/localtime:/etc/localtime:ro

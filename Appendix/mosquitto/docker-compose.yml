@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  # other services
+  mosquitto:
+    image: eclipse-mosquitto
+    container_name: mosquitto
+    restart: always
+    volumes:
+      - ./containers/mosquitto/config:/mosquitto/config
+      - ./containers/mosquitto/data:/mosquitto/data
+      - ./containers/mosquitto/log:/mosquitto/log
+      - ./containers/certificates:/mosquitto/config/certs:ro
+      - /etc/localtime:/etc/localtime:ro
+    user: "1000:1000"

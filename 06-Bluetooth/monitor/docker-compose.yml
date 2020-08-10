@@ -1,0 +1,34 @@
+version: '3.7'
+
+services:
+  mosquitto:
+    # mosquitto configuration
+  monitor:
+    container_name: monitor
+    image: mashupmill/presence-monitor:latest
+    network_mode: host
+    cap_add:
+      - NET_ADMIN
+      - SYS_ADMIN
+    restart: always
+    command: ['-b', '-x']
+    volumes:
+      - ./containers/certificates:/etc/ssl/certs:ro
+      - /etc/localtime:/etc/localtime:ro
+    environment:
+      MQTT_ADDRESS: HOSTNAME
+      MQTT_PORT: 8883
+      MQTT_USER: home
+      MQTT_PASSWORD: PASSWORD
+      MQTT_CERTIFICATE_PATH: /etc/ssl/certs/rootCA.pem
+      MQTT_PUBLISHER_IDENTITY: secondfloor
+      KNOWN_BEACON_ADDRESSES: |
+        FF:FF:FF:FF:FF:FF Red Tag
+        FF:FF:FF:FF:FF:FF Green Tag
+        FF:FF:FF:FF:FF:FF White Tag
+        FF:FF:FF:FF:FF:FF Black Tag
+      KNOWN_STATIC_ADDRESSES: |
+        FF:FF:FF:FF:FF:FF Alpha Phone BT
+        FF:FF:FF:FF:FF:FF Beta Phone BT
+      PREF_ARRIVAL_SCAN_ATTEMPTS: 2
+      PREF_DEVICE_TRACKER_REPORT: "true"

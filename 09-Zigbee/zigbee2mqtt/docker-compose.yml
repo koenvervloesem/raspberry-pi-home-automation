@@ -1,0 +1,26 @@
+version: '3.7'
+
+services:
+  mosquitto:
+    # mosquitto configuration
+  zigbee2mqtt:
+    image: koenkk/zigbee2mqtt
+    container_name: zigbee2mqtt
+    volumes:
+      - ./containers/zigbee2mqtt:/app/data
+    devices:
+      - /dev/ttyACM0:/dev/ttyACM0
+    restart: always
+    environment:
+      - TZ=Europe/Brussels
+  zigbee2mqttassistant:
+    image: carldebilly/zigbee2mqttassistant
+    container_name: zigbee2mqttassistant
+    environment:
+      - Z2MA_SETTINGS__MQTTSERVER=mosquitto
+      - Z2MA_SETTINGS__MQTTUSERNAME=home
+      - Z2MA_SETTINGS__MQTTPASSWORD=PASSWORD
+      - TZ=Europe/Brussels
+    ports:
+      - 8880:80
+    restart: always

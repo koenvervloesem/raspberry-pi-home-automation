@@ -1,0 +1,27 @@
+mqtt:
+  host: pi-red.home
+  port: 8883
+  username: home
+  password: PASSWORD
+  ca_cert: /etc/ssl/certs/rootCA.pem
+  topic_prefix: bt-mqtt-gateway
+  client_id: bt-mqtt-gateway
+  availability_topic: availability
+
+manager:
+  command_timeout: 30
+  workers:
+    miflora:
+      args:
+        devices:
+          aglaonema: C4:7C:8D:67:65:AD
+        topic_prefix: miflora
+      update_interval: 300
+    ruuvitag:
+      args:
+        devices:
+          bedroom: F9:DA:D2:0D:62:24
+          livingroom: C8:03:24:74:7E:0E
+          terrace: C5:98:17:63:C3:E3
+        topic_prefix: ruuvitag
+      update_interval: 60

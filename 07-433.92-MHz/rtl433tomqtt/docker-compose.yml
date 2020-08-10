@@ -1,0 +1,14 @@
+version: '3.7'
+
+service:
+  mosquitto:
+    # mosquitto config
+  rtl433tomqtt:
+    image: bademux/rtl_433tomqtt:latest
+    container_name: rtl433tomqtt
+    restart: always
+    volumes:
+      - ./containers/rtl433tomqtt:/home/user/.config/rtl_433:ro
+      - /etc/localtime:/etc/localtime:ro
+    devices:
+      - /dev/bus/usb:/dev/bus/usb

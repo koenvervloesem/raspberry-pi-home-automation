@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  mosquitto:
+    # mosquitto configuration
+  motioneye:
+    image: ccrisan/motioneye:master-armhf
+    container_name: motioneye
+    restart: always
+    volumes:
+      - ./containers/motioneye/etc:/etc/motioneye
+      - ./containers/motioneye/lib:/var/lib/motioneye
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - "8765:8765"
+    devices:
+      - "/dev/video0:/dev/video0"

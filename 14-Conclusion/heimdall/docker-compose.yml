@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+  # other services
+  heimdall:
+    image: linuxserver/heimdall
+    container_name: heimdall
+    restart: always
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Brussels
+    volumes:
+      - ./containers/heimdall:/config
+    ports:
+      - 443:443

@@ -1,0 +1,12 @@
+appdaemon:
+  time_zone: Europe/Brussels
+  latitude: LATITUDE
+  longitude: LONGITUDE
+  elevation: ELEVATION
+  plugins:
+    MQTT:
+      type: mqtt
+      client_host: mosquitto
+      namespace: mqtt
+      client_user: home
+      client_password: PASSWORD

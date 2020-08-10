@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  mosquitto:
+    # mosquitto config
+  rhasspy:
+    image: rhasspy/rhasspy
+    container_name: rhasspy
+    restart: always
+    volumes:
+      - ./containers/rhasspy/profiles:/profiles
+      - ./containers/certificates:/etc/ssl/private:ro
+    ports:
+      - 12101:12101
+    devices:
+      - /dev/snd:/dev/snd
+    command: --user-profiles /profiles --profile en --certfile /etc/ssl/private/cert.pem --keyfile /etc/ssl/private/key.pem

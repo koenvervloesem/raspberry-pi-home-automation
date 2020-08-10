@@ -1,0 +1,8 @@
+version: '3.7'
+
+services:
+  hello-world:
+    image: python:3.8-alpine
+    ports:
+      - "80:8000"
+    command: "python -m http.server 8000"

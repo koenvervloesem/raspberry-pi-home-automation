@@ -1,0 +1,3 @@
+time_app:
+  module: time_app
+  class: TimeApp

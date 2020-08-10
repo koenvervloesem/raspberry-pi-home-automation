@@ -1,0 +1,19 @@
+version: '3.7'
+
+services:
+  # Other services
+  gotify:
+    image: gotify/server-arm7
+    container_name: gotify
+    restart: always
+    volumes:
+      - ./containers/gotify:/app/data
+      - ./containers/certificates:/certs:ro
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - 8443:443
+    environment:
+      - GOTIFY_SERVER_SSL_ENABLED=true
+      - GOTIFY_SERVER_SSL_CERTFILE=/certs/cert.pem
+      - GOTIFY_SERVER_SSL_CERTKEY=/certs/key.pem
+      - GOTIFY_DEFAULTUSER_PASS="!K8B*vuSixsb2tAn&BIA"

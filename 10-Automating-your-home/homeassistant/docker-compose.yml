@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  mosquitto:
+    # mosquitto configuration
+  homeassistant:
+    container_name: homeassistant
+    image: homeassistant/home-assistant:latest
+    volumes:
+      - ./containers/homeassistant:/config
+      - ./containers/certificates:/etc/ssl/private:ro
+      - /etc/localtime:/etc/localtime:ro
+    restart: always
+    ports:
+      - "8123:8123"

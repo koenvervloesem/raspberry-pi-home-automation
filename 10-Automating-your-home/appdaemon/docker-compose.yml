@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  mosquitto:
+    # mosquitto configuration
+  homeassistant:
+    # homeassistant configuration
+  appdaemon:
+    image: appdaemon
+    container_name: appdaemon
+    restart: always
+    volumes:
+      - ./containers/appdaemon:/conf
+    user: "1000:1000"

@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+  mosquitto:
+    # mosquitto configuration
+  bt-mqtt-gateway:
+    image: zewelor/bt-mqtt-gateway
+    container_name: bt-mqtt-gateway
+    restart: always
+    volumes:
+      - ./containers/bt-mqtt-gateway/config.yaml:/config.yaml
+      - ./containers/certificates:/etc/ssl/certs:ro
+    # These capabilities are needed for Bluetooth
+    cap_add:
+      - NET_ADMIN
+      - SYS_ADMIN
+    # The Docker host should have working Bluetooth
+    network_mode: host
