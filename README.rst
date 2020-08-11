@@ -1,8 +1,12 @@
-# Control Your Home with Raspberry Pi
+###################################
+Control Your Home with Raspberry Pi
+###################################
 
-This repository contains the code discussed in the book [Control Your Home with Raspberry Pi: Secure, Modular, Open-Source and Self-sufficient](https://koen.vervloesem.eu/books/control-your-home-with-raspberry-pi/), published by [Elektor International Media](https://www.elektor.com).
+This repository contains the code discussed in the book `Control Your Home with Raspberry Pi: Secure, Modular, Open-Source and Self-sufficient <https://koen.vervloesem.eu/books/control-your-home-with-raspberry-pi/>`_, published by `Elektor International Media <https://www.elektor.com>`_.
 
-## About the book
+**************
+About the book
+**************
 
 Ever since the Raspberry Pi was introduced, it has been used by enthusiasts to automate their homes. The Raspberry Pi is a powerful computer in a small package, with lots of interfacing options to control various devices.
 
@@ -20,25 +24,36 @@ At the end of this book, you can install and configure your Raspberry Pi as a hi
 * Securely access your home automation dashboard from remote locations.
 * Use fully offline voice commands in your own language.
 
-|    <!-- -->          |        <!-- -->                     |
-|----------------------|-------------------------------------|
++----------------------+-------------------------------------+
 | **Title**            | Control Your Home with Raspberry Pi |
++----------------------+-------------------------------------+
 | **Author**           | Koen Vervloesem                     |
++----------------------+-------------------------------------+
 | **Publication date** | 2020-08-17                          |
++----------------------+-------------------------------------+
 | **Number of pages**  | 331                                 |
++----------------------+-------------------------------------+
 | **Price**            | € 37.50                             |
++----------------------+-------------------------------------+
 | **ISBN-13**          | 978-1-907920-94-3                   |
++----------------------+-------------------------------------+
 | **ISBN-10**          | 1-907920-94-3                       |
++----------------------+-------------------------------------+
 | **Publisher**        | Elektor International Media (EIM)   |
++----------------------+-------------------------------------+
 
-## Included code
+*************
+Included code
+*************
 
 This code, organized by chapter, includes:
 
-* Docker Compose files to start the discussed services as Docker containers. Note that in most of these Docker Compose files you have to add the `mosquitto` service. In practice you copy the services from various Docker Compose files and add them to one Docker Compose file to run your whole home automation stack.
+* Docker Compose files to start the discussed services as Docker containers. Note that in most of these Docker Compose files you have to add the ``mosquitto`` service. In practice you copy the services from various Docker Compose files and add them to one Docker Compose file to run your whole home automation stack.
 * Configuration files for various services. Some of these are fragments of configuration files. Read the relevant chapter for an explanation of these configuration fragments.
 * Python scripts, some of them meant to be run in AppDaemon.
 
-## License
+*******
+License
+*******
 
-All code is provided by [Koen Vervloesem](http://koen.vervloesem.eu) as open source software with the MIT license. See [LICENSE](LICENSE) for more information.
+All code is provided by `Koen Vervloesem <http://koen.vervloesem.eu>`_ as open source software with the MIT license. See the LICENSE_ for more information.
