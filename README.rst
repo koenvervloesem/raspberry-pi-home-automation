@@ -56,4 +56,4 @@ This code, organized by chapter, includes:
 License
 *******
 
-All code is provided by `Koen Vervloesem <http://koen.vervloesem.eu>`_ as open source software with the MIT license. See the LICENSE_ for more information.
+All code is provided by `Koen Vervloesem <http://koen.vervloesem.eu>`_ as open source software with the MIT license. See the `LICENSE <LICENSE>`_ for more information.
