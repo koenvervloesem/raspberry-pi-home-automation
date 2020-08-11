@@ -20,6 +20,17 @@ At the end of this book, you can install and configure your Raspberry Pi as a hi
 * Securely access your home automation dashboard from remote locations.
 * Use fully offline voice commands in your own language.
 
+|    <!-- -->          |        <!-- -->                     |
+|----------------------|-------------------------------------|
+| **Title**            | Control Your Home with Raspberry Pi |
+| **Author**           | Koen Vervloesem                     |
+| **Publication date** | 2020-08-17                          |
+| **Number of pages**  | 331                                 |
+| **Price**            | € 37.50                             |
+| **ISBN-13**          | 978-1-907920-94-3                   |
+| **ISBN-10**          | 1-907920-94-3                       |
+| **Publisher**        | Elektor International Media (EIM)   |
+
 ## Included code
 
 This code, organized by chapter, includes:
