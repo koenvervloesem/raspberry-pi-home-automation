@@ -52,6 +52,34 @@ This code, organized by chapter, includes:
 * Configuration files for various services. Some of these are fragments of configuration files. Read the relevant chapter for an explanation of these configuration fragments.
 * Python scripts, some of them meant to be run in AppDaemon.
 
+*****************
+Download the code
+*****************
+
+You can download the code on your Raspberry Pi all at once with:
+
+.. code-block:: shell
+
+  git clone https://github.com/koenvervloesem/raspberry-pi-home-automation.git
+
+You may need to install ``git`` first:
+
+.. code-block:: shell
+
+  sudo apt install git
+
+The code is then downloaded into the directory ``raspberry-pi-home-automation``, organized by chapter.
+
+If you prefer to download only a specific file, navigate to the file in GitHub's web interface and then click on **Raw** at the right. Then copy the URL from your web browser's URL bar and paste it after the ``wget`` command, for instance:
+
+.. code-block:: shell
+
+  wget https://github.com/koenvervloesem/raspberry-pi-home-automation/blob/master/12-Voice-control/rhasspy/sentences.ini
+
+Make sure that you're in the right directory first, or move the file to the correct location afterwards.
+
+Just selecting and copying the code from the web interface and pasting it in an editor may also work, but is not recommended. Especially with Python code the whitespace can become mixed up, which results in invalid code.
+
 *******
 License
 *******
