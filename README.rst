@@ -84,7 +84,7 @@ Just selecting and copying the code from the web interface and pasting it in an 
 Errata
 ******
 
-See the `ERRATA <ERRATA>`_ document for the list of errors in the book and their corrections.
+See the `ERRATA <ERRATA.rst>`_ document for the list of errors in the book and their corrections.
 
 *******
 License
