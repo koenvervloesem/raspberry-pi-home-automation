@@ -2,7 +2,7 @@
 Control Your Home with Raspberry Pi
 ###################################
 
-This repository contains the code discussed in the book `Control Your Home with Raspberry Pi: Secure, Modular, Open-Source and Self-sufficient <https://koen.vervloesem.eu/books/control-your-home-with-raspberry-pi/>`_, published by `Elektor International Media <https://www.elektor.com>`_, as well as a list of errors and their corrections.
+This repository contains the code discussed in the book `Control Your Home with Raspberry Pi: Secure, Modular, Open-Source and Self-sufficient <https://koen.vervloesem.eu/books/control-your-home-with-raspberry-pi/>`_, published by `Elektor International Media <https://www.elektor.com>`_, as well as `a list of errors and their corrections <ERRATA.rst>`_ and some `additional tips and references <ADDITIONS.rst>`_.
 
 **************
 About the book
@@ -85,6 +85,12 @@ Errata
 ******
 
 See the `ERRATA <ERRATA.rst>`_ document for the list of errors in the book and their corrections.
+
+*********
+Additions
+*********
+
+See the `ADDITIONS <ADDITIONS.rst>`_ document for some additional tips and references to interesting projects not mentioned in the book.
 
 *******
 License
