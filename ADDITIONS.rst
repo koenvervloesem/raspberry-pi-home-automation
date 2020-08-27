@@ -15,6 +15,12 @@ KNX
 Loxone
   `PyLoxone <https://github.com/JoDehli/PyLoxone>`_ is Home Assistant's binding for Loxone. If you use Home Assistant's Loxone integration and enable `MQTT Statestream <https://www.home-assistant.io/integrations/mqtt_statestream/>`_, state changes of your Loxone devices will also be published as MQTT messages. Another option is using `LoxBerry <https://www.loxwiki.eu/pages/viewpage.action?pageId=27100273>`_ with its MQTT integration.
 
+********************************
+Chapter 10: Automating your home
+********************************
+
+* `RuuviTag Demo <https://github.com/koenvervloesem/ruuvitag-demo>`_: In this demo Telegraf collects MQTT messages with RuuviTag sensor measurements from bt-mqtt-gateway, sends the values to InfluxDB where they are stored in a time-series database, and then shows them in a Grafana dashboard. I haven't covered Grafana in the book, but you should definitely check it out when you want some more powerful dashboard functionality.
+
 *************************
 Chapter 12: Voice control
 *************************
