@@ -4,6 +4,12 @@ Errata
 
 These are corrections of errors found in the book `Control Your Home with Raspberry Pi: Secure, Modular, Open-Source and Self-sufficient <https://koen.vervloesem.eu/books/control-your-home-with-raspberry-pi/>`_ only after its publication:
 
+********************************************************
+Chapter 2: The Raspberry Pi as a home automation gateway
+********************************************************
+
+* page 48: If the command to install Docker Compose fails with a message about ``libffi``, first install this dependency with ``sudo apt install libffi-dev``.
+
 *********************************************
 Chapter 3: Secure your home automation system
 *********************************************
