@@ -15,6 +15,12 @@ KNX
 Loxone
   `PyLoxone <https://github.com/JoDehli/PyLoxone>`_ is Home Assistant's binding for Loxone. If you use Home Assistant's Loxone integration and enable `MQTT Statestream <https://www.home-assistant.io/integrations/mqtt_statestream/>`_, state changes of your Loxone devices will also be published as MQTT messages. Another option is using `LoxBerry <https://www.loxwiki.eu/pages/viewpage.action?pageId=27100273>`_ with its MQTT integration.
 
+*****************************************************
+Chapter 4: MQTT (Message Queuing Telemetry Transport)
+*****************************************************
+
+* `system_sensors <https://github.com/Sennevds/system_sensors>`: A Python script that sends system data such as CPU temperature, CPU, disk and memory usage, Wi-Fi signal strength and the number of pending updates over MQTT. Originally created for the Raspberry Pi, but now also works on other Linux systems. If you have MQTT discovery enabled in Home Assistant (see page 221 of the book), you don't need to configure anything in Home Assistant to see the data.
+
 ********************************
 Chapter 10: Automating your home
 ********************************
