@@ -19,7 +19,7 @@ Loxone
 Chapter 4: MQTT (Message Queuing Telemetry Transport)
 *****************************************************
 
-* `system_sensors <https://github.com/Sennevds/system_sensors>`: A Python script that sends system data such as CPU temperature, CPU, disk and memory usage, Wi-Fi signal strength and the number of pending updates over MQTT. Originally created for the Raspberry Pi, but now also works on other Linux systems. If you have MQTT discovery enabled in Home Assistant (see page 221 of the book), you don't need to configure anything in Home Assistant to see the data.
+* `system_sensors <https://github.com/Sennevds/system_sensors>`_: A Python script that sends system data such as CPU temperature, CPU, disk and memory usage, Wi-Fi signal strength and the number of pending updates over MQTT. Originally created for the Raspberry Pi, but now also works on other Linux systems. If you have MQTT discovery enabled in Home Assistant (see page 221 of the book), you don't need to configure anything in Home Assistant to see the data.
 
 ********************************
 Chapter 10: Automating your home
