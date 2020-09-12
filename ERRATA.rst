@@ -17,6 +17,12 @@ Chapter 3: Secure your home automation system
 * page 76: The ``docker-compose restart`` command should be ``docker-compose up -d`` so the containers are *recreated* from the new images, not only *restarted* (which they are then from the old images).
 * page 77: The sentence "If you have created virtual environments, you have to do repeat the same actions" should be "If you have created virtual environments, you have to repeat the same actions".
 
+*********************
+Chapter 7: 433.92 MHz
+*********************
+
+* page 161: The line ``service:`` in ``docker-compose.yml`` should be ``services:``. This is fixed in the `file in this repository <https://github.com/koenvervloesem/raspberry-pi-home-automation/blob/master/07-433.92-MHz/rtl433tomqtt/docker-compose.yml>`_.
+
 *************************
 Chapter 12: Voice control
 *************************
