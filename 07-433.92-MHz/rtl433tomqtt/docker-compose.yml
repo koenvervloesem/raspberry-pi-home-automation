@@ -1,6 +1,6 @@
 version: '3.7'
 
-service:
+services:
   mosquitto:
     # mosquitto config
   rtl433tomqtt:
