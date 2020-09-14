@@ -23,6 +23,7 @@ Chapter 7: 433.92 MHz
 
 * page 161: The line ``service:`` in ``docker-compose.yml`` should be ``services:``. This is fixed in the `file in this repository <https://github.com/koenvervloesem/raspberry-pi-home-automation/blob/master/07-433.92-MHz/rtl433tomqtt/docker-compose.yml>`_.
 * page 162: Make sure to check the output of the ``lsusb`` command before you enter the values for the ``idVendor`` and ``idProduct`` attributes in the ``udev`` rule: they should match your device. For instance if you see ``ID 0bda:2832`` on the line of your RTL-SDR stick, you need ``ATTRS{idVendor}=="0bda", ATTRS{idProduct}=="2832"`` in the ``udev`` rule.
+* page 165: The sentence "You can find see this with:" below the orange box should be "You can see this with:".
 
 *************************
 Chapter 12: Voice control
