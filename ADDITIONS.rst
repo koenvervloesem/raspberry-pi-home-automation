@@ -26,6 +26,7 @@ Chapter 4: MQTT (Message Queuing Telemetry Transport)
 Chapter 10: Automating your home
 ********************************
 
+* `Homepoint <https://github.com/sieren/Homepoint>`_: Firmware to turn an ESP32-based device such as the M5Stack Core into a dashboard for an MQTT-based home automation system. I find this the perfect companion for the home automation system of my book. I wrote a blog post about it: `Create a dashboard for your MQTT-based home automation system with the M5Stack Core and Homepoint <https://koen.vervloesem.eu/blog/create-a-dashboard-for-your-mqtt-based-home-automation-system-with-the-m5stack-core-and-homepoint/>`_.
 * `RuuviTag Demo <https://github.com/koenvervloesem/ruuvitag-demo>`_: In this demo Telegraf collects MQTT messages with RuuviTag sensor measurements from bt-mqtt-gateway, sends the values to InfluxDB where they are stored in a time-series database, and then shows them in a Grafana dashboard. I haven't covered Grafana in the book, but you should definitely check it out when you want some more powerful dashboard functionality.
 
 *************************
