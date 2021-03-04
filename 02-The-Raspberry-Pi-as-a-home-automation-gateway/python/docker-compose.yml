@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   hello-world:
-    image: python:3.8-alpine
+    image: python:3.9-slim-buster
     ports:
       - "80:8000"
     command: "python -m http.server 8000"
