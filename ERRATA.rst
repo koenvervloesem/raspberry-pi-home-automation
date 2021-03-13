@@ -18,6 +18,12 @@ Chapter 3: Secure your home automation system
 * page 76: The ``docker-compose restart`` command should be ``docker-compose up -d`` so the containers are *recreated* from the new images, not only *restarted* (which they are then from the old images).
 * page 77: The sentence "If you have created virtual environments, you have to do repeat the same actions" should be "If you have created virtual environments, you have to repeat the same actions".
 
+*****************************************************
+Chapter 4: MQTT (Message Queuing Telemetry Transport)
+*****************************************************
+
+* page 84: Since the release of Mosquitto 2.0, the ``mosquitto.conf`` configuration file needs a line ``allow_anonymous true`` if you want to allow connections without username and password. This is fixed in the `file in this repository <https://github.com/koenvervloesem/raspberry-pi-home-automation/blob/master/04-MQTT/mosquitto/mosquitto.conf>`_.
+
 *********************
 Chapter 7: 433.92 MHz
 *********************
