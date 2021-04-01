@@ -10,6 +10,8 @@ Integrating other protocols
 
 The book dives into a specific set of home automation protocols, but the architecture is general and modular enough to use it with other protocols. I found the following projects that look interesting if you want to use another protocol (note that I didn't test them):
 
+digitalSTROM
+  `digitalstrom-mqtt <https://github.com/gaetancollaud/digitalstrom-mqtt>`_ lets you set and react to any digitalSTROM devices using MQTT. There's a Docker image on Docker Hub.
 KNX
   `knx-mqtt-bridge <https://github.com/pakerfeldt/knx-mqtt-bridge>`_ bridges your KNX devices with MQTT. It doesn't have a Docker image on Docker Hub, but it supplies a Dockerfile to build your own Docker image.
 Loxone
