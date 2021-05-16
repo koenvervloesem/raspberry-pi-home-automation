@@ -4,11 +4,11 @@ services:
   mosquitto:
     # mosquitto config
   rtl433tomqtt:
-    image: bademux/rtl_433tomqtt:latest
+    image: hertzg/rtl_433:alpine-3.12-latest  # There's an issue with 3.13
     container_name: rtl433tomqtt
     restart: always
     volumes:
-      - ./containers/rtl433tomqtt:/home/user/.config/rtl_433:ro
+      - ./containers/rtl433tomqtt:/etc/rtl_433:ro
       - /etc/localtime:/etc/localtime:ro
     devices:
       - /dev/bus/usb:/dev/bus/usb
