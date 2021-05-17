@@ -22,7 +22,7 @@ Chapter 3: Secure your home automation system
 Chapter 4: MQTT (Message Queuing Telemetry Transport)
 *****************************************************
 
-* page 84: Since the release of Mosquitto 2.0, the ``mosquitto.conf`` configuration file needs a line ``allow_anonymous true`` if you want to allow connections without username and password. Moreover, the ``port`` option is now deprecated and should be changed to the ``listener`` option (also on page 86). All this is fixed in the `Mosquitto configuration files in this repository <https://github.com/koenvervloesem/raspberry-pi-home-automation/tree/master/04-MQTT/mosquitto>`_.
+* page 84: Since the release of Mosquitto 2.0, the ``mosquitto.conf`` configuration file needs a line ``allow_anonymous true`` if you want to allow connections without username and password. Moreover, the ``port`` option is now deprecated and should be changed to the ``listener`` option (also on page 86 and 101). All this is fixed in the `Mosquitto configuration files in this repository <https://github.com/koenvervloesem/raspberry-pi-home-automation/tree/master/04-MQTT/mosquitto>`_.
 
 *********************
 Chapter 7: 433.92 MHz
