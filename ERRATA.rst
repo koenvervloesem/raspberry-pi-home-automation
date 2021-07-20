@@ -8,6 +8,7 @@ These are corrections of errors found in the book `Control Your Home with Raspbe
 Chapter 2: The Raspberry Pi as a home automation gateway
 ********************************************************
 
+* page 29: "Compute Model 3" at the bottom of the page should be "Compute Module 3".
 * page 48: If the command to install Docker Compose fails with a message about ``libffi``, first install this dependency with ``sudo apt install libffi-dev``.
 * page 50: Due to `a bug <https://github.com/moby/moby/issues/40734>`_ in libseccomp2, the ``python:3.8-alpine`` Docker image fails on the 32-bit version of Raspberry Pi OS Buster. One solution is to change the image to ``python:3.9-slim-buster``. This is fixed in the `docker-compose file in this repository <https://github.com/koenvervloesem/raspberry-pi-home-automation/blob/master/02-The-Raspberry-Pi-as-a-home-automation-gateway/python/docker-compose.yml>`_.
 
