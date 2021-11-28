@@ -23,6 +23,7 @@ Chapter 4: MQTT (Message Queuing Telemetry Transport)
 
 * `Homie <https://homieiot.github.io/>`_: An MQTT convention for the Internet of Things, defining a standardized way for IoT devices and services to announce themselves and publish their data to the MQTT broker. It seems to be a more detailed specification than `mqtt-smarthome <https://github.com/mqtt-smarthome/>`_, which is mentioned in the book.
 * `system_sensors <https://github.com/Sennevds/system_sensors>`_: A Python script that sends system data such as CPU temperature, CPU, disk and memory usage, Wi-Fi signal strength and the number of pending updates over MQTT. Originally created for the Raspberry Pi, but now also works on other Linux systems. If you have MQTT discovery enabled in Home Assistant (see page 221 of the book), you don't need to configure anything in Home Assistant to see the data.
+* `serial2mqtt <https://github.com/vortex314/serial2mqtt>`_: A gateway that reads commands from the serial port of a Raspberry Pi and transfers them as MQTT messages to your MQTT broker. For instance, an Arduino board connected to your Raspberry Pi can run ``Serial.println("[1,\"src/myTopic/time\","+String(millis())+"]");`` to publish its uptime to the MQTT topic ``src/myTopic/time``.
 
 *****************
 Chapter 9: Zigbee
