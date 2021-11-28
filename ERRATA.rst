@@ -34,6 +34,12 @@ Chapter 7: 433.92 MHz
 * page 162: Make sure to check the output of the ``lsusb`` command before you enter the values for the ``idVendor`` and ``idProduct`` attributes in the ``udev`` rule: they should match your device. For instance if you see ``ID 0bda:2832`` on the line of your RTL-SDR stick, you need ``ATTRS{idVendor}=="0bda", ATTRS{idProduct}=="2832"`` in the ``udev`` rule.
 * page 165: The sentence "You can find see this with:" below the orange box should be "You can see this with:".
 
+*****************
+Chapter 9: Zigbee
+*****************
+
+* page 193: Zigbee2MqttAssistant isn't maintained anymore. Zigbee2MQTT has its own `frontend <https://www.zigbee2mqtt.io/guide/configuration/frontend.html#nginx-proxy-configuration>`_ now with a web interface for your Zigbee devices. Consult its documentation for the configuration. You can remove the ``zigbee2mqttassistant`` container from the book's Docker Compose file.
+
 *************************
 Chapter 12: Voice control
 *************************
