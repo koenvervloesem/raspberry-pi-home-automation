@@ -16,6 +16,7 @@ Chapter 2: The Raspberry Pi as a home automation gateway
 Chapter 3: Secure your home automation system
 *********************************************
 
+* page 69: The sentence "The window you're seeing now is the Certificate Manager." should be "The window you're seeing now is the Certificate Manager, and you need its tab Authorities."
 * page 76: The ``docker-compose restart`` command should be ``docker-compose up -d`` so the containers are *recreated* from the new images, not only *restarted* (which they are then from the old images).
 * page 77: The sentence "If you have created virtual environments, you have to do repeat the same actions" should be "If you have created virtual environments, you have to repeat the same actions".
 
