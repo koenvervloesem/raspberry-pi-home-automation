@@ -40,6 +40,12 @@ Chapter 9: Zigbee
 
 * page 193: Zigbee2MqttAssistant isn't maintained anymore. Zigbee2MQTT has its own `frontend <https://www.zigbee2mqtt.io/guide/configuration/frontend.html#nginx-proxy-configuration>`_ now with a web interface for your Zigbee devices. Consult its documentation for the configuration. You can remove the ``zigbee2mqttassistant`` container from the book's Docker Compose file.
 
+********************************
+Chapter 10: Automating your home
+********************************
+
+* page 205: The command to generate a password hash in the Node-RED container still works, but since Node-RED 1.1.0 you can also use the easier command ``docker exec -ti node-red node-red admin hash-pw`` (the former occurrence of ``node-red`` is the container name, the latter the name of the command).
+
 *************************
 Chapter 12: Voice control
 *************************
