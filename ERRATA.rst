@@ -40,6 +40,7 @@ Chapter 9: Zigbee
 *****************
 
 * page 193: Zigbee2MqttAssistant isn't maintained anymore. Zigbee2MQTT has its own `frontend <https://www.zigbee2mqtt.io/guide/configuration/frontend.html#nginx-proxy-configuration>`_ now with a web interface for your Zigbee devices. Consult its documentation for the configuration. You can remove the ``zigbee2mqttassistant`` container from the book's Docker Compose file.
+* page 197: In the book I generate the Zigbee network key with a complex command. In the mean time, Zigbee2MQTT has implemented an easier way: just add ``network_key: GENERATE`` to the ``advanced`` section in Zigbee2MQTT's ``configuration.yaml``. The next startup of the container it generates a random network key.
 
 ********************************
 Chapter 10: Automating your home

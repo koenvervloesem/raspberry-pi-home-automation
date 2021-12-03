@@ -30,7 +30,6 @@ Chapter 9: Zigbee
 *****************
 
 * Using the CC2652 instead of the CC2531: In the book I used the CC2531 to create a Zigbee coordinator, but recently two interesting CC2652-based devices have appeared, and both are `supported by Zigbee2mqtt <https://www.zigbee2mqtt.io/information/supported_adapters.html>`_. There's the `Electrolama zig-a-zig-ah! <https://electrolama.com/projects/zig-a-zig-ah/>`_ and `slaesh's CC2652RB stick <https://slae.sh/projects/cc2652/>`_. Both USB adapters have an external antenna and thus a very good range, and they easily handle a Zigbee network of 100+ devices. In contrast to the CC2531, they don't require additional hardware to flash.
-* In the book I generated a network key with a complex command. In the mean time, Zigbee2MQTT has implemented an easier way: just add ``network_key: GENERATE`` to the ``advanced`` section in Zigbee2MQTT's ``configuration.yaml``, and the next startup of the container it generates a random network key.
 
 ********************************
 Chapter 10: Automating your home
