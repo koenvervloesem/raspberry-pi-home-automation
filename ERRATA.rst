@@ -31,7 +31,7 @@ Chapter 4: MQTT (Message Queuing Telemetry Transport)
 Chapter 6: Bluetooth
 ********************
 
-* p. 150: The location of the configuration file of ``bt-mqtt-gateway`` in its Docker container has changed from ``/config.yaml`` to ``/application/config.yaml``. This has been fixed in the `docker-compose file in this repository <https://github.com/koenvervloesem/raspberry-pi-home-automation/blob/master/06-Bluetooth/bt-mqtt-gateway/docker-compose.yml>`_.
+* page 150: The location of the configuration file of ``bt-mqtt-gateway`` in its Docker container has changed from ``/config.yaml`` to ``/application/config.yaml``. This has been fixed in the `docker-compose file in this repository <https://github.com/koenvervloesem/raspberry-pi-home-automation/blob/master/06-Bluetooth/bt-mqtt-gateway/docker-compose.yml>`_.
 
 *********************
 Chapter 7: 433.92 MHz
