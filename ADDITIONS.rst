@@ -25,6 +25,12 @@ Chapter 4: MQTT (Message Queuing Telemetry Transport)
 * `system_sensors <https://github.com/Sennevds/system_sensors>`_: A Python script that sends system data such as CPU temperature, CPU, disk and memory usage, Wi-Fi signal strength and the number of pending updates over MQTT. Originally created for the Raspberry Pi, but now also works on other Linux systems. If you have MQTT discovery enabled in Home Assistant (see page 221 of the book), you don't need to configure anything in Home Assistant to see the data.
 * `serial2mqtt <https://github.com/vortex314/serial2mqtt>`_: A gateway that reads commands from the serial port of a Raspberry Pi and transfers them as MQTT messages to your MQTT broker. For instance, an Arduino board connected to your Raspberry Pi can run ``Serial.println("[1,\"src/myTopic/time\","+String(millis())+"]");`` to publish its uptime to the MQTT topic ``src/myTopic/time``.
 
+********************
+Chapter 6: Bluetooth
+********************
+
+* An interesting alternative for bt-mqtt-gateway that has been developed since publication of the book is `Theengs Gateway <https://gateway.theengs.io>`_. It retrieves data from a wide range of BLE sensors, translates this information into a readable JSON format and pushes this to an MQTT broker. You can run it as a Docker container.
+
 *****************
 Chapter 9: Zigbee
 *****************
