@@ -9,7 +9,8 @@ Chapter 2: The Raspberry Pi as a home automation gateway
 ********************************************************
 
 * page 29: "Compute Model 3" at the bottom of the page should be "Compute Module 3".
-* page 48: If the command to install Docker Compose fails with a message about ``libffi``, first install this dependency with ``sudo apt install libffi-dev``.
+* page 40: The ``raspi-config`` menu options have changed. The hostname is now in **1 System Options - S4 Hostname**. The timezone is in **5 Localisation Options - L2 Timezone**. The memory split has moved to **4 Performance Options - P2 GPU Memory**.
+* page 48: Installing Docker as in section 2.9.1 now automatically installs Docker Compose, so you don't need to install it anymore with pip. If not, you can still install Docker Compose manually with ``sudo apt install docker-compose-plugin``. Note that with this new plugin, you need to run the command as ``docker compose``, not ``docker-compose``.
 * page 50: Due to `a bug <https://github.com/moby/moby/issues/40734>`_ in libseccomp2, the ``python:3.8-alpine`` Docker image fails on the 32-bit version of Raspberry Pi OS Buster. One solution is to change the image to ``python:3.9-slim-buster``. This is fixed in the `docker-compose file in this repository <https://github.com/koenvervloesem/raspberry-pi-home-automation/blob/master/02-The-Raspberry-Pi-as-a-home-automation-gateway/python/docker-compose.yml>`_.
 
 *********************************************
@@ -26,6 +27,7 @@ Chapter 4: MQTT (Message Queuing Telemetry Transport)
 *****************************************************
 
 * page 84: Since the release of Mosquitto 2.0, the ``mosquitto.conf`` configuration file needs a line ``allow_anonymous true`` if you want to allow connections without username and password. Moreover, the ``port`` option is now deprecated and should be changed to the ``listener`` option (also on page 86 and 101). All this is fixed in the `Mosquitto configuration files in this repository <https://github.com/koenvervloesem/raspberry-pi-home-automation/tree/master/04-MQTT/mosquitto>`_.
+* page 93: MQTT.fx is no longer free. An open-source alternative with roughly the same functionality is `mqttk <https://github.com/matesh/mqttk>`_. You can install it from PyPI using ``pip3 install mqttk`` and it works on Windows, macOS and Linux.
 
 ********************
 Chapter 6: Bluetooth
